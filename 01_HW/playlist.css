@@ -28,7 +28,6 @@ th {
     color: white;
 }
 
-img {
-    width: 120px;
-    border-radius: 5px;
+iframe {
+    border-radius: 6px;
 }
