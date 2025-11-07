@@ -16,30 +16,36 @@
         </tr>
         <tr>
             <td>Name:</td>
-            <td><input type="text"></td>
+            <td><input type="text" id="name"></td>
         </tr>
         <tr>
             <td>Email:</td>
-            <td><input type="email"></td>
+            <td><input type="email" id="email"></td>
         </tr>
         <tr>
             <td>Phone:</td>
-            <td><input type="tel"></td>
+            <td><input type="tel" id="phone"></td>
         </tr>
         <tr>
             <td>Subject:</td>
-            <td><input type="text"></td>
+            <td><input type="text" id="subject"></td>
         </tr>
         <tr>
             <td>Message:</td>
-            <td><textarea rows="4" cols="25"></textarea></td>
+            <td><textarea rows="4" cols="25" id="message"></textarea></td>
         </tr>
         <tr>
             <td colspan="2" align="center">
-                <button>Send Message</button>
+                <button onclick="sendMessage()">Send Message</button>
             </td>
         </tr>
     </table>
+
+    <script>
+        function sendMessage() {
+            alert("Your message has been sent!");
+        }
+    </script>
 </body>
 
 </html>
