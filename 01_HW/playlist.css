@@ -36,3 +36,10 @@ iframe {
     background-color: #007BFF;
     color: white;
 }
+
+.row-highlight {
+    background-color: #99ccff;
+    color: #004080;
+    font-weight: bold;
+    font-size: 18px;
+}
