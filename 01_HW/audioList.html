@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio List</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 40px auto;
+            width: 80%;
+            background-color: white;
+            table-layout: fixed;
+            /* 👈 כדי לשמור על הרוחב הקבוע */
+        }
+
+        th,
+        td {
+            border: 1px solid rgba(0, 0, 0, 0.772);
+            padding: 8px 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.808);
+            color: white;
+        }
+
+        /* 👇 כאן מקטינים את עמודת ה-Cover בלבד */
+        td:nth-child(1),
+        th:nth-child(1) {
+            width: 90px;
+        }
+
+        td img {
+            width: 80px;
+            /* גם התמונה קטנה בהתאם */
+        }
+
+        a {
+            color: #0047AB;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #1c5bd8;
+        }
+
+        audio {
+            width: 200px;
+            border: 2px solid #22a422;
+            border-radius: 14px;
+            background-color: white;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Cover</th>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Year</th>
+            <th>Play</th>
+            <th>Download</th>
+        </tr>
+
+        <tr>
+            <td><img src="AudioFiles/imagine.jpg" alt="Imagine"></td>
+            <td>Imagine</td>
+            <td>John Lennon</td>
+            <td>1971</td>
+            <td>
+                <audio controls>
+                    <source src="AudioFiles/imagine.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td><a href="AudioFiles/imagine.mp3" download>Download</a></td>
+        </tr>
+
+        <tr>
+            <td><img src="AudioFiles/bohemian.jpg" alt="Bohemian Rhapsody"></td>
+            <td>Bohemian Rhapsody</td>
+            <td>Queen</td>
+            <td>1975</td>
+            <td>
+                <audio controls>
+                    <source src="AudioFiles/bohemian.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </td>
+            <td><a href="AudioFiles/bohemian.mp3" download>Download</a></td>
+        </tr>
+    </table>
+</body>
+
+</html>
