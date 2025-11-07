@@ -43,3 +43,14 @@ iframe {
     font-weight: bold;
     font-size: 18px;
 }
+
+a {
+    text-decoration: none;
+    color: #0047AB;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00BFFF;
+}
