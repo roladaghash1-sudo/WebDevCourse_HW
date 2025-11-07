@@ -17,31 +17,25 @@
             margin: 40px auto;
             width: 80%;
             background-color: white;
-            table-layout: fixed;
-            /* 👈 כדי לשמור על הרוחב הקבוע */
         }
 
         th,
         td {
-            border: 1px solid rgba(0, 0, 0, 0.772);
+            border: 1px solid black;
             padding: 8px 10px;
             text-align: center;
         }
 
         th {
-            background-color: rgba(0, 0, 0, 0.808);
+            background-color: black;
             color: white;
         }
 
-        /* 👇 כאן מקטינים את עמודת ה-Cover בלבד */
-        td:nth-child(1),
-        th:nth-child(1) {
-            width: 90px;
-        }
-
         td img {
-            width: 80px;
-            /* גם התמונה קטנה בהתאם */
+            width: 120px;
+            height: 90px;
+            border-radius: 6px;
+            object-fit: cover;
         }
 
         a {
@@ -57,7 +51,7 @@
         audio {
             width: 200px;
             border: 2px solid #22a422;
-            border-radius: 14px;
+            border-radius: 8px;
             background-color: white;
             padding: 2px;
         }
@@ -76,32 +70,34 @@
         </tr>
 
         <tr>
-            <td><img src="AudioFiles/imagine.jpg" alt="Imagine"></td>
-            <td>Imagine</td>
-            <td>John Lennon</td>
-            <td>1971</td>
+            <td><img src="AudioFiles/dream.jpg" alt="Dream Song"></td>
+            <td>Dream</td>
+            <td>AShamaluev Music</td>
+            <td>2020</td>
             <td>
                 <audio controls>
-                    <source src="AudioFiles/imagine.mp3" type="audio/mp3">
+                    <source src="AudioFiles/dream.mp3" type="audio/mp3">
                     Your browser does not support the audio tag.
                 </audio>
             </td>
-            <td><a href="AudioFiles/imagine.mp3" download>Download</a></td>
+            <td><a href="AudioFiles/dream.mp3" download>Download</a></td>
         </tr>
 
         <tr>
-            <td><img src="AudioFiles/bohemian.jpg" alt="Bohemian Rhapsody"></td>
-            <td>Bohemian Rhapsody</td>
-            <td>Queen</td>
-            <td>1975</td>
+            <td><img src="AudioFiles/inspiring.jpg" alt="Inspiring Song"></td>
+            <td>Inspiring Background</td>
+            <td>AShamaluev Music</td>
+            <td>2017</td>
             <td>
                 <audio controls>
-                    <source src="AudioFiles/bohemian.mp3" type="audio/mp3">
+                    <source src="AudioFiles/inspiring.mp3" type="audio/mp3">
                     Your browser does not support the audio tag.
                 </audio>
             </td>
-            <td><a href="AudioFiles/bohemian.mp3" download>Download</a></td>
+            <td><a href="AudioFiles/inspiring.mp3" download>Download</a></td>
         </tr>
+
+
     </table>
 </body>
 
